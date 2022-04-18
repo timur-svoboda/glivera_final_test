@@ -4,14 +4,89 @@
 	top: 0;
 	left: 0;
 
+	padding: 0 1rem;
 	height: var(--height-header);
 	width: 100%;
 
 	font-size: 1rem;
 
+	background: $white;
+
 	will-change: transform;
 
 	@include z-index(header);
+}
+
+.header__in {
+	@extend %global_flex_block_row_nowrap_flex-start_center;
+
+	margin: 0 auto;
+	max-width: $page_width;
+	height: 100%;
+}
+
+.header__logo_wrap {
+	flex-shrink: 0;
+	margin-right: 3rem;
+	width: 8.6rem;
+	height: 2.8rem;
+}
+
+.header__nav_wrap {
+	@extend %global_flex_block_row_wrap_flex-end_center;
+
+	flex-grow: 1;
+	margin-right: 2rem;
+
+	@include bp($point_2 - 1) {
+		display: none;
+	}
+}
+
+.header__social_wrap {
+	margin-right: 1.6rem;
+
+	@include bp($point_1 - 1) {
+		display: none;
+	}
+}
+
+.header__search_wrap {
+	@extend %global_flex_block_e;
+
+	margin-right: 1.2rem;
+
+	@include bp($point_2 - 1) {
+		display: none;
+	}
+}
+
+.header__search_button {
+	width: 1.2rem;
+	height: 1.2rem;
+
+	cursor: pointer;
+}
+
+.header__language_switch_wrap {
+	@include bp($point_1 - 1) {
+		display: none;
+	}
+}
+
+.header__burger_wrap {
+	@extend %global_flex_block_row_wrap_flex-end_center;
+
+	flex-grow: 1;
+
+	@include bp($point_2, min) {
+		display: none;
+	}
+}
+
+.header__burger {
+	width: 3rem;
+	height: 3rem;
 }
 
 //------------------------------------------------------------layout###

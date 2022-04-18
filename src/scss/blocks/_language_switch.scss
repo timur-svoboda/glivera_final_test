@@ -1,0 +1,23 @@
+.language_switch {
+	@extend %global_flex_block_row_nowrap_flex-start_baseline;
+}
+
+.language_switch__option {
+	color: $gray;
+
+	cursor: pointer;
+
+	&:first-child {
+		margin-right: 4px;
+	}
+
+	&.language_switch__option--active {
+		font-weight: 700;
+	}
+}
+
+.language_switch__divider {
+	color: $gray;
+
+	margin-right: 4px;
+}

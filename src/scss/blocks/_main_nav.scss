@@ -1,0 +1,24 @@
+.main_nav__list {
+	@extend %global_flex_block_row_wrap_flex-start_center;
+}
+
+.main_nav__item {
+	&:not(:last-child) {
+		padding-right: 2.4rem;
+	}
+}
+
+.main_nav__link {
+	font-size: .8rem;
+	line-height: 1.2rem;
+	color: $color_text_base;
+	text-transform: uppercase;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:focus {
+		text-decoration: none;
+	}
+}

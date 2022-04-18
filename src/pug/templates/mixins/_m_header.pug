@@ -1,2 +1,40 @@
 mixin header
 	header.header
+		.header__in
+			.header__logo_wrap
+				a.header__logo_link(href="#")
+					+icon("logo_header", "icon--size_mod")
+			.header__nav_wrap
+				.main_nav
+					+menu({
+						gl_class: 'main_nav',
+						items: [
+							{title: 'О нас', url: '#', active: false},
+							{title: 'Решения', url: '#', active: false},
+							{title: 'Аналитика', url: '#', active: false},
+							{title: 'Партнеры', url: '#', active: false},
+							{title: 'Контакты', url: '#', active: false},
+							{title: 'Подписка', url: '#', active: false},
+						],
+					})
+			.header__social_wrap
+				+social({
+					mod_block: 'header_mod',
+					items: [
+						{mod_link: 'social_link--facebook_mod', name_icon: 'facebook', mod_icon: 'icon--size_mod icon--gray_mod'},
+						{mod_link: 'social_link--twitter_mod', name_icon: 'twitter', mod_icon: 'icon--size_mod icon--gray_mod'},
+						{mod_link: 'social_link--rss_mod', name_icon: 'rss', mod_icon: 'icon--size_mod icon--gray_mod'},
+						{mod_link: 'social_link--youtube_mod', name_icon: 'youtube', mod_icon: 'icon--size_mod icon--gray_mod'},
+					],
+				})
+			.header__search_wrap
+				button.header__search_button(type="button", aria-label="Поиск")
+					+icon('magnifier', 'icon--size_mod icon--gray_mod')
+			.header__language_switch_wrap
+				.language_switch
+					button.language_switch__option.language_switch__option--active(type="button", aria-label="Выбрать украинский язык") UA
+					.language_switch__divider |
+					button.language_switch__option(type="button", aria-label="Выбрать русский язык") RU
+			.header__burger_wrap
+				button.header__burger(type="button", aria-label="Открыть мобильное меню")
+					+icon('burger', 'icon--size_mod icon--gray_mod')
