@@ -2,21 +2,13 @@
 .section {
 	position: relative;
 
+	padding: 0 1rem;
 	width: 100%;
 
 	font-size: 1rem;
 
-	//remove this demo style
-	&.demo_mod {
-		@extend %global_flex_block_row_nowrap_center_center;
-
-		height: calc(100vh - (var(--height-footer) + var(--height-header)));
-
-		font-size: 4rem;
-		color: $white;
-		text-align: center;
-
-		background-color: $black;
+	&.section--post_grid_mod {
+		margin-bottom: 4rem;
 	}
 }
 

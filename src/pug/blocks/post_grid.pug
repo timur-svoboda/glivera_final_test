@@ -1,0 +1,314 @@
+-
+	const posts = [
+		{
+			post_mod: 'post--bg_img_mod',
+			text_wrap_mod: 'post__text_wrap--large_padding_mod',
+			category_mod: 'post__category--bg_light_blue_mod',
+			title_mod: 'post__title--uppercase_mod',
+			img: 'post_1',
+			category: 'Здравоохранение',
+			author: 'Владимир Мищенко',
+			title: 'Противостояние кибератакам и вирусам с помощью Bitdefender для эффективного администрирования безопасности в медучреждении',
+			time_to_read: '~ 6 мин',
+		},
+		{
+			category_mod: 'post__category--color_blue_mod',
+			category: 'Государственный сектор',
+			top_icon: 'lightning',
+			title: 'Правительство Великобритании инвестировало 40 млн. фунтов стерлингов в цифровые сервисы в целях улучшения кибербезопасности',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_violet_mod',
+			category: 'Страхование',
+			top_icon: 'lightning',
+			title: 'Страховая компания Berkshire Hathaway (BHHC) использует аналитическое решение CLARA для выплат компенсаций',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_light_blue_mod',
+			category: 'Здравоохранение',
+			top_icon: 'lightning',
+			title: 'Компания EchoNous создала KOSMOS AI – прибор для диагностики пациентов прямо в больничной палате',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_red_mod',
+			category: 'Телекоммуникации',
+			top_icon: 'lightning',
+			title: 'BearingPoint продлила соглашение с инкубатором телекоммуникационной группы Telefonica, компанией Wayra',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			is_video_post: true,
+			img: 'video_post_preview',
+			top_phrase: 'New!',
+			title_lines: [
+				{
+					is_accent: true,
+					text: 'Digital',
+				},
+				{
+					is_accent: true,
+					text: 'Transformation',
+				},
+				{
+					is_accent: false,
+					text: 'По-украински',
+				},
+			],
+			author: 'Юрий Чубатюк',
+			link_text: 'Смотреть',
+		},
+		{
+			text_wrap_mod: 'post__text_wrap--large_padding_mod',
+			category_mod: 'post__category--color_light_blue_mod',
+			category: 'Здравоохранение',
+			author: 'Пётр Ванькин',
+			title: 'Противостояние кибератакам и вирусам с помощью Bitdefender для эффективного администрирования безопасности в медучреждении',
+			description: 'Решение дает возможность обеспечить комплексную, надежную защиту ИТ-инфраструктуры и регулирует уровень технических нагрузок с полным охватом разных цифровых систем',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_orange_mod',
+			category: 'Транспорт и логистика',
+			top_icon: 'lightning',
+			title: 'Служба доставки еды Foodora Canada заключила партнерские отношения с производителем роботов-курьеров Tiny Mile',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_green_mod',
+			category: 'Банки',
+			top_icon: 'lightning',
+			title: 'BL Bank использует технологии для создания новых источников дохода',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			text_wrap_mod: 'post__text_wrap--large_padding_mod',
+			category_mod: 'post__category--color_pink_mod',
+			img: 'post_10',
+			is_img_a_video_preview: true,
+			category: 'Ритейл и eCommerce',
+			author: 'Пётр Ванькин',
+			title: 'Используя Alteryx, компания Coca-Cola снизила расходы на 60%',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_pink_mod',
+			category: 'Ритейл и eCommerce',
+			top_icon: 'lightning',
+			title: 'MakeMyTrip использует цифровые платформы, способствующие более широкому распространению электронной коммерции',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_violet_mod',
+			category: 'Страхование',
+			top_icon: 'lightning',
+			title: 'Страховая компания Kotak Life Insurance использует интеллектуальные алгоритмы для проверки статуса клиента',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			text_wrap_mod: 'post__text_wrap--large_padding_mod',
+			category_mod: 'post__category--color_blue_mod',
+			img: 'post_13',
+			category: 'Государственный сектор',
+			author: 'Владимир Мищенко',
+			title: 'Кибербезопасность и стабильность сети от WatchGuard для защиты данных и оптимизации бизнес-процессов',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_pink_mod',
+			title_mod: 'post__title--medium_mod',
+			category: 'Ритейл и eCommerce',
+			author: 'Аполлинарий Космодемьянский',
+			title: 'Citi ежегодно тратит на технологии более 8 млрд. дол., являясь лидером в области цифровых решений в сфере банкинга',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			post_mod: 'post--expanded_mod',
+			text_wrap_mod: 'post__text_wrap--large_padding_mod',
+			category_mod: 'post__category--color_orange_mod',
+			title_mod: 'post__title--large_mod',
+			category: 'Транспорт и логистика',
+			is_author_on_top: true,
+			author: 'Артём Голоскевич',
+			title: 'Логистическая компания Yusen Logistics применяет Alteryx для составления аналитических отчётов',
+			description: 'Платформа стала профессиональным инструментом для процесса ETL. На основании полученных данных бизнес-аналитики компании смогли извлекать требуемую информацию, проводить бизнес-ориентированный анализ и формировать отчёты для финансового отдела',
+			time_to_read: '~ 6 мин',
+		},
+		{
+			text_wrap_mod: 'post__text_wrap--large_padding_mod',
+			category_mod: 'post__category--color_green_mod',
+			img: 'post_16',
+			category: 'Банки',
+			author: 'Денис Полищук',
+			title: 'AI и ML от Dataiku в банковском деле для безопасности и эффективного управления данными',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_red_mod',
+			title_mod: 'post__title--medium_mod',
+			category: 'Телекоммуникации',
+			top_icon: 'lightning',
+			title: 'China Unicom применяет аналитику больших данных и Nokia Predictive Care для выявления аномалий в пакетном ядре',
+			time_to_read: '~ 6 мин',
+		},
+		{
+			in_mod: 'post__in--vertical_mod',
+			img: 'post_13',
+			category_mod: 'post__category--color_blue_mod',
+			category: 'Государственный сектор',
+			author: 'Артём Голоскевич',
+			title: 'Smart Farming от Alteryx для цифрового преобразования и развития сельского хозяйства',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			in_mod: 'post__in--vertical_mod',
+			img: 'post_16',
+			category_mod: 'post__category--color_green_mod',
+			category: 'Банки',
+			author: 'Пётр Ванькин',
+			title: 'Western Union защищает финансовые сделки на AWS, используя CloudGuard Dome9 от Check Point',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			in_mod: 'post__in--vertical_mod',
+			img: 'post_20',
+			category_mod: 'post__category--color_orange_mod',
+			category: 'Транспорт и логистика',
+			author: 'Владимир Мищенко',
+			title: 'Поставщик технологических логистических решений Aramex применяет MobiControl для контроля активов',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_green_mod',
+			category: 'Банки',
+			is_author_on_top: true,
+			author: 'Владими Мищенко',
+			title: 'Новейшая интеллектуальная защита корпоративных данных от Bitdefender для Patria Bank',
+			description: 'Решение является одним из лучших на рынке для обеспечения ИТ-безопасности и эффективной борьбы с киберпреступностью',
+			time_to_read: '~ 6 мин',
+		},
+		{
+			category_mod: 'post__category--color_orange_mod',
+			title_mod: 'post__title--medium_mod',
+			category: 'Транспорт и логистика',
+			top_icon: 'lightning',
+			title: 'Метрополитен Лос-Анджелеса использует TAP-браслеты для валидации пассажиров',
+			time_to_read: '~ 6 мин',
+		},
+		{
+			post_mod: 'post--bg_img_mod',
+			text_wrap_mod: 'post__text_wrap--large_padding_mod',
+			category_mod: 'post__category--bg_blue_mod',
+			img: 'post_23',
+			category: 'Государственный сектор',
+			author: 'Артём Голоскевич',
+			title: 'Логистическая компания Yusen Logistics применяет Alteryx для составления аналитических отчётов',
+			description: 'Платформа стала профессиональным инструментом для процесса ETL. На основании полученных данных бизнес-аналитики компании смогли извлекать требуемую информацию, проводить бизнес-ориентированный анализ и формировать отчёты для финансового отдела',
+			time_to_read: '~ 6 мин',
+		},
+		{
+			category_mod: 'post__category--color_blue_mod',
+			category: 'Государственный сектор',
+			title: 'PPG Industries использует прогнозную аналитику для поддержания промышленных активов в функциональном состоянии',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_green_mod',
+			title_mod: 'post__title--medium_mod',
+			category: 'Банки',
+			top_icon: 'lightning',
+			title: 'Инвестиционная компания Franklin Templeton Investments применяет решение о данных от Fractal',
+			time_to_read: '~ 6 мин',
+		},
+		{
+			category_mod: 'post__category--color_light_blue_mod',
+			category: 'Здравоохранение',
+			title: 'Gali Health представила персонального помощника по здоровью – Gali AI',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_violet_mod',
+			category: 'Ритейл и eCommerce',
+			is_author_on_top: true,
+			author: 'Денис Полищук',
+			title: 'PepsiCo повысила скорость составления отчётов о продажах на 90%',
+			description: 'ПО сочетает обработку естественного языка, методологию синтаксического анализа неструктурированного текста и специальное ПО под базы данных для определения атрибутов платежа. Решение приводит к прогнозируемой ежегодной экономии в размере 6 млн. долл. в виде затрат на обработку и доработку вручную',
+			time_to_read: '~ 6 мин',
+		},
+		{
+			text_wrap_mod: 'post__text_wrap--large_padding_mod',
+			category_mod: 'post__category--color_gree_mod',
+			category: 'Телекоммуникации',
+			author: 'Пётр Ванькин',
+			title: 'Противостояние кибератакам и вирусам с помощью Bitdefender для эффективного администрирования безопасности в медучреждении',
+			description: 'Решение дает возможность обеспечить комплексную, надежную защиту ИТ-инфраструктуры и регулирует уровень технических нагрузок с полным охватом разных цифровых систем',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			text_wrap_mod: 'post__text_wrap--large_padding_mod',
+			category_mod: 'post__category--color_light_blue_mod',
+			title_mod: 'post__title--medium_mod',
+			category: 'Здравоохранение',
+			author: 'Аполлинарий Космодемьянский',
+			title: 'Goldman Sachs проводит цифровую трансформацию с помощью приложений на базе машинного обучения',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			text_wrap_mod: 'post__text_wrap--large_padding_mod',
+			category_mod: 'post__category--color_green_mod',
+			title_mod: 'post__title--medium_mod',
+			category: 'Банки',
+			author: 'Аполлинарий Космодемьянский',
+			title: 'Служба внутренних доходов США применяет аналитику данных для борьбы с мошенничеством',
+			time_to_read: '~ 1 мин',
+		},
+		{
+			category_mod: 'post__category--color_blue_mod',
+			category: 'Государственный сектор',
+			is_author_on_top: true,
+			author: 'Денис Полищук',
+			title: 'Western Union защищает финансовые сделки на AWS, используя CloudGuard Dome9 от Check Point',
+			description: 'Dome9 – это комплексная программная платформа для обеспечения безопасности и согласования общедоступных облаков. Используя Dome9, компания оценивает свой уровень безопасности, защищает пользователей от кражи личной информации и потери данных в облаке',
+			time_to_read: '~ 6 мин',
+		},
+	];
+
+section.section.section--post_grid_mod
+	.section_in 
+		.post_grid
+			each post, index in posts
+				if post.is_video_post 
+					.post_grid__item
+						.video_post
+							.video_post__in
+								.video_post__img_wrap
+									+picture({
+										img: post.img,
+										class: 'video_post__picture',
+										img_class: 'video_post__img',
+									})
+								.video_post__text_wrap
+									.video_post__top
+										.video_post__top_phrase= post.top_phrase
+									.video_post__main
+										.video_post__title
+											each line in post.title_lines
+												if line.is_accent
+													.video_post__title_line.video_post__title_line--color_red_mod= line.text
+												else
+													.video_post__title_line= line.text
+										.video_post__author= post.author
+									.video_post__bottom
+										a.video_post__link(href="#")
+											.video_post__link_text= post.link_text
+											.video_post__play_icon_wrap
+												+icon('play_button_outlined', 'icon--size_mod')
+				else
+					.post_grid__item
+						+post({
+							...post,
+							title: `${index + 1} ${post.title}`,
+							date: '00 окт 20',
+						})

@@ -1,0 +1,178 @@
+.post_grid {
+	display: grid;
+	gap: 1.2rem;
+
+	@include bp($point_1, min) {
+		grid-template-columns: 2fr repeat(3, 1fr);
+	}
+
+	@include bp($point_1 - 1) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@include bp($point_2 - 1) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include bp($point_4 - 1) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.post_grid__item {
+	@include flex_block(row, nowrap, stretch, stretch);
+
+	min-height: 13.8rem;
+
+	&:nth-child(1) {
+		@include bp($point_1, min) {
+			grid-area: span 2 / span 2;
+		}
+
+		@include bp($point_2 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(7) {
+		@include bp($point_1, min) {
+			grid-area: span 2 / span 1;
+		}
+
+		@include bp($point_2 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(14) {
+		@include bp($point_1, min) {
+			grid-area: span 2 / span 1;
+		}
+
+		@include bp($point_1 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(15) {
+		@include bp($point_1, min) {
+			grid-area: span 2 / span 2;
+		}
+
+		@include bp($point_2 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(18) {
+		@include bp($point_1, min) {
+			grid-area: span 2 / span 1;
+		}
+
+		@include bp($point_2 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(19) {
+		@include bp($point_1, min) {
+			grid-area: span 2 / span 1;
+		}
+
+		@include bp($point_2 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(20) {
+		@include bp($point_1, min) {
+			grid-area: span 2 / span 1;
+		}
+
+		@include bp($point_2 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(21) {
+		@include bp($point_1 - 1) {
+			grid-area: span 1 / span 1;
+		}
+
+		@include bp($point_2 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(23) {
+		@include bp($point_1, min) {
+			grid-area: span 2 / span 2;
+		}
+
+		@include bp($point_2 - 1) {
+			grid-area: span 1 / span 2;
+		}
+
+		@include bp($point_3 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(27) {
+		@include bp($point_1 - 1) {
+			grid-area: span 2 / span 1;
+		}
+
+		@include bp($point_2 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(28) {
+		@include bp($point_1, min) {
+			grid-area: span 2 / span 1;
+		}
+
+		@include bp($point_1 - 1) {
+			grid-area: span 1 / span 2;
+		}
+
+		@include bp($point_2 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(29) {
+		@include bp($point_1, min) {
+			grid-area: span 2 / span 1;
+		}
+
+		@include bp($point_1 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(30) {
+		@include bp($point_1, min) {
+			grid-area: span 2 / span 1;
+		}
+
+		@include bp($point_1 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+
+	&:nth-child(31) {
+		@include bp($point_1 - 1) {
+			grid-area: span 1 / span 1;
+		}
+
+		@include bp($point_2 - 1) {
+			grid-area: span 1 / span 2;
+		}
+
+		@include bp($point_4 - 1) {
+			grid-area: span 1 / span 1;
+		}
+	}
+}

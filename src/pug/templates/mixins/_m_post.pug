@@ -1,0 +1,44 @@
+mixin post(data)
+	- const post_mod = data.post_mod || '';
+	- const in_mod = data.in_mod || '';
+	- const text_wrap_mod = data.text_wrap_mod || '';
+	- const category_mod = data.category_mod || '';
+	- const title_mod = data.title_mod || '';
+	.post(class=post_mod)
+		.post__in(class=in_mod)
+			if data.img
+				.post__img_wrap
+					+picture({
+						img: data.img,
+						class: 'post__picture',
+						img_class: 'post__img',
+					})
+					if data.is_img_a_video_preview
+						.post__play_icon_wrap
+							a.post__play_icon_link(href="#")
+								+icon('play_button', 'icon--size_mod')
+			.post__text_wrap(class=text_wrap_mod)
+				.post__top
+					.post__category(class=category_mod)= data.category
+					if data.top_icon
+						.post__top_icon_wrap
+							+icon(data.top_icon, 'icon--size_mod')
+					else if data.author && data.is_author_on_top
+						.post__author
+							| Автор:
+							|
+							strong= data.author 
+				.post__main
+					if data.author && !data.is_author_on_top
+						.post__author
+							| Автор:
+							|
+							strong= data.author 
+					a.post__title(class=title_mod, href="#")= data.title 
+					if data.description
+						.post__description= data.description
+				.post__bottom 
+					.post__date= data.date 
+					.post__time_to_read= data.time_to_read
+
+				
