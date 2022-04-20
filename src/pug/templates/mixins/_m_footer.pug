@@ -1,2 +1,123 @@
+-
+	const footer = {
+		general_links: [
+			{
+				text: 'Кто мы',
+			},
+			{
+				text: 'Что мы делаем',
+			},
+			{
+				text: 'Направления работы',
+			},
+			{
+				text: 'Компетенции',
+			},
+			{
+				text: 'Команда',
+			},
+			{
+				text: 'Новости',
+			},
+			{
+				text: 'Партнеры',
+			},
+			{
+				text: 'Контакты',
+			},
+		],
+		solution_links: [
+			{
+				text: 'Банки',
+			},
+			{
+				text: 'Страхование',
+			},
+			{
+				text: 'Здравохранение',
+			},
+			{
+				text: 'Транспорт и логистика',
+			},
+			{
+				text: 'Государственный сектор',
+			},
+			{
+				text: 'Ритейл и eCommerce',
+			},
+			{
+				text: 'Телекоммуникация',
+			},
+		],
+		about: [
+			{
+				text: 'EVEREST - опытный интегратор digital-технологий, продуктов и сервисов для цифровой трансформации бизнеса, корпоративного и государственного секторов.',
+			},
+			{
+				text: 'Разрабатывает и внедряет решения на базе AI, используя методы Data Data и ML для совершенствования и автоматизации бизнес-процессов клиентов.',
+			},
+			{
+				text: 'Всегда оперирует тенденциями цифрового мира и концентрирует свои усилия на уникальности и инновационности методов в работе с каждым клиентом над созданием и адаптацией digital-идей и концепций.',
+			},
+		],
+	}; 
+
 mixin footer
 	footer.footer
+		.footer__container
+			.footer__in 
+				.footer__column 
+					.footer__logo_wrap 
+						a.footer__logo_link(href="#")
+							+icon('logo_footer', 'icon--size_mod')
+					.footer__section 
+						.footer__section_title Платформа AI
+						.footer__section_content 
+							.footer__social_wrap
+								+social({
+									mod_block: 'footer_mod',
+									items: [
+										{mod_link: 'social_link--facebook_mod', name_icon: 'facebook', mod_icon: 'icon--size_mod icon--white_mod'},
+										{mod_link: 'social_link--twitter_mod', name_icon: 'twitter', mod_icon: 'icon--size_mod icon--white_mod'},
+										{mod_link: 'social_link--rss_mod', name_icon: 'rss', mod_icon: 'icon--size_mod icon--white_mod'},
+										{mod_link: 'social_link--youtube_mod', name_icon: 'youtube', mod_icon: 'icon--size_mod icon--white_mod'},
+									],
+								})
+							.footer__copyright 
+								.footer__copyright_sign ©
+								.footer__copyright_text 
+									| 2020 Everest. 
+									br
+									| ALL RIGHTS RESERVED
+				.footer__column 
+					.links
+						.links__list 
+							each link in footer.general_links
+								.links__item.links__item--divide_line_mod
+									a.links__link.links__link--uppercase_mod(href="#")= link.text
+				.footer__column 
+					.footer__section 
+						.footer__section_title Аналитика
+						.footer__section_content
+							.links
+								.links__title Решения:
+								.links__list 
+									each link in footer.solution_links
+										.links__item 
+											a.links__link.links__link--small_mod(href="#")= link.text
+				.footer__column 
+					.footer__section 
+						.footer__section_title О нас
+						.footer__section_content 
+							.footer__about_text
+								each paragraph in footer.about
+									p.footer__about_paragraph= paragraph.text
+							form.footer__form(method="post", action="/subscribe", autocomplete="on")
+								.footer__form_in
+									input.footer__form_input(type="email", placeholder="Email")
+									button.footer__form_button(type="submit") Подписаться
+
+
+
+
+
