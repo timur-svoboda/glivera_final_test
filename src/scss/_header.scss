@@ -70,6 +70,7 @@
 	width: 1.2rem;
 	height: 1.2rem;
 
+	fill: $gray;
 	cursor: pointer;
 
 	@include bp($point_1 - 1) {
