@@ -90,11 +90,7 @@
 .video_post__link {
 	@extend %global_flex_block_row_nowrap_flex-end_center;
 
-	&:hover {
-		text-decoration: none;
-	}
-
-	&:focus {
+	&:hover, &:focus {
 		text-decoration: none;
 	}
 }

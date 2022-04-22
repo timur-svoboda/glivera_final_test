@@ -14,11 +14,7 @@
 	color: $color_text_base;
 	text-transform: uppercase;
 
-	&:hover {
-		text-decoration: none;
-	}
-
-	&:focus {
+	&:hover, &:focus {
 		text-decoration: none;
 	}
 }

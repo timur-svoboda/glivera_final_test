@@ -36,11 +36,7 @@
 	line-height: 1.2rem;
 	color: $white;
 
-	&:hover {
-		text-decoration: none;
-	}
-
-	&:focus {
+	&:hover, &:focus {
 		text-decoration: none;
 	}
 

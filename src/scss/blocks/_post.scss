@@ -215,11 +215,7 @@
 	font-weight: 500;
 	color: $color_text_base;
 
-	&:hover {
-		text-decoration: none;
-	}
-
-	&:focus {
+	&:hover, &:focus {
 		text-decoration: none;
 	}
 
