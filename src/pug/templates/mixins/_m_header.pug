@@ -31,10 +31,9 @@ mixin header
 				button.header__search_button(type="button", aria-label="Поиск")
 					+icon('magnifier', 'icon--size_mod icon--gray_mod')
 			.header__language_switch_wrap
-				.language_switch
-					button.language_switch__option.language_switch__option--active(type="button", aria-label="Выбрать украинский язык") UA
-					.language_switch__divider |
-					button.language_switch__option(type="button", aria-label="Выбрать русский язык") RU
+				ul.language_switch
+					li.language_switch__option.language_switch__option--active UA
+					li.language_switch__option RU
 			.header__burger_wrap
 				button.header__burger(type="button", aria-label="Открыть мобильное меню")
 					+icon('burger', 'icon--size_mod icon--gray_mod')

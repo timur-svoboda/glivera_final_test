@@ -14,10 +14,10 @@
 	&.language_switch__option--active {
 		font-weight: 700;
 	}
-}
 
-.language_switch__divider {
-	color: $gray;
+	&:not(:first-child)::before {
+		margin-right: 4px;
 
-	margin-right: 4px;
+		content: "|"
+	}
 }
