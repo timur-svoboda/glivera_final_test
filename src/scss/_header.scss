@@ -83,19 +83,71 @@
 	}
 }
 
-.header__burger_wrap {
-	@extend %global_flex_block_row_wrap_flex-end_center;
+//------------------------------------------------------------layout###
 
-	flex-grow: 1;
+//---------------------------------------------trigger
+@mixin user_menu_butt_line {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: .4rem;
+	margin-top: -.2rem;
+	background: $gray;
+}
 
-	@include bp($point_1, min) {
-		display: none;
+.menu_trigger {
+	z-index: 210;
+	position: absolute;
+	top: 50%;
+	right: var(--gl-indent);
+	display: none; // hidden on wide screens
+	height: 2.6rem;
+	width: 3.8rem;
+	margin: -1.6rem 0 0 auto;
+	text-transform: uppercase;
+
+	color: transparent;
+	cursor: pointer;
+
+	@include bp($point_1 - 1) {
+		display: block; // appear on tablets
+	}
+
+	&:before {
+		content: '';
+		transform: translate(0, -1rem);
+		transition: all .3s ease;
+
+		@include user_menu_butt_line;
+	}
+	&:after {
+		content: '';
+		transform: translate(0, 1rem);
+		transition: all .3s ease;
+
+		@include user_menu_butt_line;
+	}
+	&.active_mod {
+		&:before {
+			transform: (rotate(45deg) translate(0, 0));
+		}
+
+		&:after {
+			transform: (rotate(-45deg) translate(0, 0));
+		}
 	}
 }
 
-.header__burger {
-	width: 3rem;
-	height: 3rem;
+.menu_trigger_decor {
+	transition: all .3s ease;
+
+	.active_mod & {
+		opacity: 0;
+		transform: translate(100%, 0);
+	}
+
+	@include user_menu_butt_line;
 }
 
-//------------------------------------------------------------layout###
+//---------------------------------------------trigger###
