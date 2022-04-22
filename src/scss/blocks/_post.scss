@@ -71,7 +71,7 @@
 
 	@include flex_block(row, nowrap, flex-start, stretch, stretch);
 	@include bp($point_1 - 1) {
-		@include flex_block(column, nowrap, flex-start, stretch, stretch);
+		flex-direction: column;
 	}
 
 	&.post__in--vertical_mod {
