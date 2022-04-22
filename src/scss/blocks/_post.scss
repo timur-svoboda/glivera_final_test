@@ -132,12 +132,14 @@
 }
 
 .post__top {
-	@extend %global_flex_block_row_nowrap_space_between_center;
+	@extend %global_flex_block_row_nowrap_flex-start_center;
 
 	margin-bottom: .6rem;
 }
 
 .post__category {
+	margin-right: 1rem;
+
 	font-size: .8rem;
 	font-weight: 500;
 	line-height: 1.2rem;
@@ -188,6 +190,8 @@
 }
 
 .post__top_icon_wrap {
+	flex-shrink: 0;
+	margin-left: auto;
 	width: .4rem;
 	height: 1rem;
 }
@@ -239,16 +243,20 @@
 }
 
 .post__bottom {
-	@extend %global_flex_block_row_nowrap_space_between_center;
+	@extend %global_flex_block_row_nowrap_flex-start_center;
 }
 
 .post__date {
+	margin-right: 1rem;
+
 	font-size: .8rem;
 	line-height: 1.2rem;
 	color: $gray;
 }
 
 .post__time_to_read {
+	margin-left: auto;
+
 	font-size: .8rem;
 	line-height: 1.2rem;
 	color: $gray;
