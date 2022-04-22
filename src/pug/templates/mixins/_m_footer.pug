@@ -90,9 +90,9 @@ mixin footer
 									p ALL RIGHTS RESERVED
 				.footer__column 
 					.links
-						.links__list 
+						ul.links__list 
 							each link in footer.general_links
-								.links__item.links__item--divide_line_mod
+								li.links__item.links__item--divide_line_mod
 									a.links__link.links__link--uppercase_mod(href="#")= link.text
 				.footer__column 
 					.footer__section 
@@ -100,9 +100,9 @@ mixin footer
 						.footer__section_content
 							.links
 								.links__title Решения:
-								.links__list 
+								ul.links__list 
 									each link in footer.solution_links
-										.links__item 
+										li.links__item 
 											a.links__link.links__link--small_mod(href="#")= link.text
 				.footer__column 
 					.footer__section 
