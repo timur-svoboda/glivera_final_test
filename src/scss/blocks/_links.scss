@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .links__title {
 	margin-bottom: .6rem;
 
@@ -30,6 +32,8 @@
 }
 
 .links__link {
+	@extend %transition_color;
+
 	display: block;
 	
 	font-size: .8rem;
@@ -37,6 +41,7 @@
 	color: $white;
 
 	&:hover, &:focus {
+		color: color.adjust($white, $lightness: -20%);
 		text-decoration: none;
 	}
 

@@ -11,13 +11,27 @@
 		margin-right: 4px;
 	}
 
-	&.language_switch__option--active {
-		font-weight: 700;
-	}
-
 	&:not(:first-child)::before {
 		margin-right: 4px;
 
 		content: "|"
+	}
+
+	&.language_switch__option--active {
+		font-weight: 700;
+
+		cursor: default;
+	}
+
+	&:not(.language_switch__option--active) {
+		@extend %transition_color;
+
+		&:hover, &:focus {
+			color: #BD243A;
+
+			&::before {
+				color: $gray;
+			}
+		}
 	}
 }

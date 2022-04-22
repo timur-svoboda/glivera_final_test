@@ -9,12 +9,15 @@
 }
 
 .main_nav__link {
+	@extend %transition_color;
+
 	font-size: .8rem;
 	line-height: 1.2rem;
 	color: $color_text_base;
 	text-transform: uppercase;
 
 	&:hover, &:focus {
+		color: #BD243A;
 		text-decoration: none;
 	}
 }

@@ -22,6 +22,14 @@
 
 	border: 1px solid $white;
 
+	transition: color .3s ease, background-color .3s ease;
+
+	&:hover, &:focus {
+		color: #BD243A;
+
+		background-color: $white;
+	}
+
 	@include st_btn();
 }
 

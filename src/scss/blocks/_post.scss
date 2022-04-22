@@ -45,12 +45,21 @@
 }
 
 .post__author,
-.post__title,
 .post__description,
 .post__date,
 .post__time_to_read {
 	.post--bg_img_mod & {
 		color: $white;
+	}
+}
+
+.post__title {
+	.post--bg_img_mod & {
+		color: $white;
+
+		&:hover, &:focus {
+			color: rgba($white, .7);
+		}
 	}
 }
 
@@ -214,12 +223,15 @@
 }
 
 .post__title {
+	@extend %transition_color;
+
 	display: block;
 
 	font-weight: 500;
 	color: $color_text_base;
 
 	&:hover, &:focus {
+		color: rgba($color_text_base, .7);
 		text-decoration: none;
 	}
 
