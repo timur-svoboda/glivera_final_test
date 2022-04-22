@@ -38,7 +38,7 @@
 	flex-grow: 1;
 	margin-right: 2rem;
 
-	@include bp($point_2 - 1) {
+	@include bp($point_1 - 1) {
 		display: none;
 	}
 }
@@ -66,6 +66,10 @@
 	height: 1.2rem;
 
 	cursor: pointer;
+
+	@include bp($point_1 - 1) {
+		display: none;
+	}
 }
 
 .header__language_switch_wrap {
@@ -79,7 +83,7 @@
 
 	flex-grow: 1;
 
-	@include bp($point_2, min) {
+	@include bp($point_1, min) {
 		display: none;
 	}
 }
