@@ -147,11 +147,13 @@
 }
 
 .post__category {
-	margin-right: 1rem;
-
 	font-size: .8rem;
 	font-weight: 500;
 	line-height: 1.2rem;
+
+	&:not(:last-child) {
+		margin-right: 1rem;
+	}
 
 	&.post__category--color_1_mod {
 		color: #00568A;
@@ -259,11 +261,13 @@
 }
 
 .post__date {
-	margin-right: 1rem;
-
 	font-size: .8rem;
 	line-height: 1.2rem;
 	color: $gray;
+
+	&:not(:last-child) {
+		margin-right: 1rem;
+	}
 }
 
 .post__time_to_read {

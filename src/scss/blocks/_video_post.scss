@@ -98,8 +98,6 @@
 .video_post__link_text {
 	@extend %transition_color;
 
-	margin-right: .6rem;
-
 	font-size: .8rem;
 	line-height: 1.2rem;
 	color: $white;
@@ -107,6 +105,10 @@
 	.video_post__link:hover &,
 	.video_post__link:focus & {
 		color: rgba($white, .7);
+	}
+
+	&:not(:last-child) {
+		margin-right: .6rem;
 	}
 }
 
