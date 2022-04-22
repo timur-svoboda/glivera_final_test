@@ -30,13 +30,9 @@
   <link href="css/app.css" rel="stylesheet"></head>
   <body>
     <header class="header">
-      <div class="header__in">
-        <div class="header__logo_wrap"><a class="header__logo_link" href="#">
-            <svg class="icon icon_logo_header icon--size_mod">
-              <use xlink:href="images/sprite/sprite.svg#logo_header"></use>
-            </svg></a></div>
+      <div class="header__in"><a class="header__logo_link" href="#"><img class="header__logo_img" src="images/logo_header.svg"></a>
         <div class="header__nav_wrap">
-          <div class="main_nav">
+          <nav class="main_nav">
             <ul class="main_nav__list ">
               <li class="main_nav__item  "><a class="main_nav__link " href="#">О нас</a></li>
               <li class="main_nav__item  "><a class="main_nav__link " href="#">Решения</a></li>
@@ -45,7 +41,7 @@
               <li class="main_nav__item  "><a class="main_nav__link " href="#">Контакты</a></li>
               <li class="main_nav__item  "><a class="main_nav__link " href="#">Подписка</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
         <div class="header__social_wrap">
           <ul class="social_list header_mod">
@@ -75,11 +71,10 @@
           </button>
         </div>
         <div class="header__language_switch_wrap">
-          <div class="language_switch">
-            <button class="language_switch__option language_switch__option--active" type="button" aria-label="Выбрать украинский язык">UA</button>
-            <div class="language_switch__divider">|</div>
-            <button class="language_switch__option" type="button" aria-label="Выбрать русский язык">RU</button>
-          </div>
+          <ul class="language_switch">
+            <li class="language_switch__option language_switch__option--active">UA</li>
+            <li class="language_switch__option">RU</li>
+          </ul>
         </div>
         <div class="header__burger_wrap">
           <button class="header__burger" type="button" aria-label="Открыть мобильное меню">
@@ -106,7 +101,7 @@
                     </div>
                     <div class="post__text_wrap post__text_wrap--large_padding_mod">
                       <div class="post__top">
-                        <div class="post__category post__category--bg_light_blue_mod">Здравоохранение</div>
+                        <div class="post__category post__category--bg_1_mod">Здравоохранение</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -127,7 +122,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_blue_mod">Государственный сектор</div>
+                        <div class="post__category post__category--color_1_mod">Государственный сектор</div>
                         <div class="post__top_icon_wrap">
                           <svg class="icon icon_lightning icon--size_mod">
                             <use xlink:href="images/sprite/sprite.svg#lightning"></use>
@@ -149,7 +144,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_violet_mod">Страхование</div>
+                        <div class="post__category post__category--color_2_mod">Страхование</div>
                         <div class="post__top_icon_wrap">
                           <svg class="icon icon_lightning icon--size_mod">
                             <use xlink:href="images/sprite/sprite.svg#lightning"></use>
@@ -171,7 +166,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_light_blue_mod">Здравоохранение</div>
+                        <div class="post__category post__category--color_3_mod">Здравоохранение</div>
                         <div class="post__top_icon_wrap">
                           <svg class="icon icon_lightning icon--size_mod">
                             <use xlink:href="images/sprite/sprite.svg#lightning"></use>
@@ -193,7 +188,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_red_mod">Телекоммуникации</div>
+                        <div class="post__category post__category--color_4_mod">Телекоммуникации</div>
                         <div class="post__top_icon_wrap">
                           <svg class="icon icon_lightning icon--size_mod">
                             <use xlink:href="images/sprite/sprite.svg#lightning"></use>
@@ -247,7 +242,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap post__text_wrap--large_padding_mod">
                       <div class="post__top">
-                        <div class="post__category post__category--color_light_blue_mod">Здравоохранение</div>
+                        <div class="post__category post__category--color_3_mod">Здравоохранение</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -269,7 +264,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_orange_mod">Транспорт и логистика</div>
+                        <div class="post__category post__category--color_5_mod">Транспорт и логистика</div>
                         <div class="post__top_icon_wrap">
                           <svg class="icon icon_lightning icon--size_mod">
                             <use xlink:href="images/sprite/sprite.svg#lightning"></use>
@@ -291,7 +286,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_green_mod">Банки</div>
+                        <div class="post__category post__category--color_6_mod">Банки</div>
                         <div class="post__top_icon_wrap">
                           <svg class="icon icon_lightning icon--size_mod">
                             <use xlink:href="images/sprite/sprite.svg#lightning"></use>
@@ -315,15 +310,14 @@
                       <picture class="post__picture">
                         <source srcset="images/post_10.jpg.webp" type="image/webp">
                         <source srcset="images/post_10.jpg" type="image/jpg"><img class="post__img" src="images/post_10.jpg" alt="">
-                      </picture>
-                      <div class="post__play_icon_wrap"><a class="post__play_icon_link" href="#">
-                          <svg class="icon icon_play_button icon--size_mod">
-                            <use xlink:href="images/sprite/sprite.svg#play_button"></use>
-                          </svg></a></div>
+                      </picture><a class="post__play_icon_link" href="#">
+                        <svg class="icon icon_play_button icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#play_button"></use>
+                        </svg></a>
                     </div>
                     <div class="post__text_wrap post__text_wrap--large_padding_mod">
                       <div class="post__top">
-                        <div class="post__category post__category--color_pink_mod">Ритейл и eCommerce</div>
+                        <div class="post__category post__category--color_7_mod">Ритейл и eCommerce</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -344,7 +338,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_pink_mod">Ритейл и eCommerce</div>
+                        <div class="post__category post__category--color_7_mod">Ритейл и eCommerce</div>
                         <div class="post__top_icon_wrap">
                           <svg class="icon icon_lightning icon--size_mod">
                             <use xlink:href="images/sprite/sprite.svg#lightning"></use>
@@ -366,7 +360,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_violet_mod">Страхование</div>
+                        <div class="post__category post__category--color_2_mod">Страхование</div>
                         <div class="post__top_icon_wrap">
                           <svg class="icon icon_lightning icon--size_mod">
                             <use xlink:href="images/sprite/sprite.svg#lightning"></use>
@@ -394,7 +388,7 @@
                     </div>
                     <div class="post__text_wrap post__text_wrap--large_padding_mod">
                       <div class="post__top">
-                        <div class="post__category post__category--color_blue_mod">Государственный сектор</div>
+                        <div class="post__category post__category--color_1_mod">Государственный сектор</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -415,7 +409,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_pink_mod">Ритейл и eCommerce</div>
+                        <div class="post__category post__category--color_7_mod">Ритейл и eCommerce</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -436,7 +430,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap post__text_wrap--large_padding_mod">
                       <div class="post__top">
-                        <div class="post__category post__category--color_orange_mod">Транспорт и логистика</div>
+                        <div class="post__category post__category--color_5_mod">Транспорт и логистика</div>
                         <div class="post__author">
                           Автор:
                           <strong>Артём Голоскевич</strong>
@@ -464,7 +458,7 @@
                     </div>
                     <div class="post__text_wrap post__text_wrap--large_padding_mod">
                       <div class="post__top">
-                        <div class="post__category post__category--color_green_mod">Банки</div>
+                        <div class="post__category post__category--color_6_mod">Банки</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -485,7 +479,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_red_mod">Телекоммуникации</div>
+                        <div class="post__category post__category--color_4_mod">Телекоммуникации</div>
                         <div class="post__top_icon_wrap">
                           <svg class="icon icon_lightning icon--size_mod">
                             <use xlink:href="images/sprite/sprite.svg#lightning"></use>
@@ -513,7 +507,7 @@
                     </div>
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_blue_mod">Государственный сектор</div>
+                        <div class="post__category post__category--color_1_mod">Государственный сектор</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -540,7 +534,7 @@
                     </div>
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_green_mod">Банки</div>
+                        <div class="post__category post__category--color_6_mod">Банки</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -567,7 +561,7 @@
                     </div>
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_orange_mod">Транспорт и логистика</div>
+                        <div class="post__category post__category--color_5_mod">Транспорт и логистика</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -588,7 +582,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_green_mod">Банки</div>
+                        <div class="post__category post__category--color_6_mod">Банки</div>
                         <div class="post__author">
                           Автор:
                           <strong>Владими Мищенко</strong>
@@ -610,7 +604,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_orange_mod">Транспорт и логистика</div>
+                        <div class="post__category post__category--color_5_mod">Транспорт и логистика</div>
                         <div class="post__top_icon_wrap">
                           <svg class="icon icon_lightning icon--size_mod">
                             <use xlink:href="images/sprite/sprite.svg#lightning"></use>
@@ -638,7 +632,7 @@
                     </div>
                     <div class="post__text_wrap post__text_wrap--large_padding_mod">
                       <div class="post__top">
-                        <div class="post__category post__category--bg_blue_mod">Государственный сектор</div>
+                        <div class="post__category post__category--bg_2_mod">Государственный сектор</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -660,7 +654,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_blue_mod">Государственный сектор</div>
+                        <div class="post__category post__category--color_1_mod">Государственный сектор</div>
                       </div>
                       <div class="post__main"><a class="post__title" href="#">PPG Industries использует прогнозную аналитику для поддержания промышленных активов в функциональном состоянии</a>
                       </div>
@@ -677,7 +671,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_green_mod">Банки</div>
+                        <div class="post__category post__category--color_6_mod">Банки</div>
                         <div class="post__top_icon_wrap">
                           <svg class="icon icon_lightning icon--size_mod">
                             <use xlink:href="images/sprite/sprite.svg#lightning"></use>
@@ -699,7 +693,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_light_blue_mod">Здравоохранение</div>
+                        <div class="post__category post__category--color_3_mod">Здравоохранение</div>
                       </div>
                       <div class="post__main"><a class="post__title" href="#">Gali Health представила персонального помощника по здоровью – Gali AI</a>
                       </div>
@@ -716,7 +710,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_violet_mod">Ритейл и eCommerce</div>
+                        <div class="post__category post__category--color_2_mod">Ритейл и eCommerce</div>
                         <div class="post__author">
                           Автор:
                           <strong>Денис Полищук</strong>
@@ -738,7 +732,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap post__text_wrap--large_padding_mod">
                       <div class="post__top">
-                        <div class="post__category post__category--color_green_mod">Телекоммуникации</div>
+                        <div class="post__category post__category--color_6_mod">Телекоммуникации</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -760,7 +754,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap post__text_wrap--large_padding_mod">
                       <div class="post__top">
-                        <div class="post__category post__category--color_light_blue_mod">Здравоохранение</div>
+                        <div class="post__category post__category--color_3_mod">Здравоохранение</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -781,7 +775,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap post__text_wrap--large_padding_mod">
                       <div class="post__top">
-                        <div class="post__category post__category--color_green_mod">Банки</div>
+                        <div class="post__category post__category--color_6_mod">Банки</div>
                       </div>
                       <div class="post__main">
                         <div class="post__author">
@@ -802,7 +796,7 @@
                   <div class="post__in">
                     <div class="post__text_wrap">
                       <div class="post__top">
-                        <div class="post__category post__category--color_blue_mod">Государственный сектор</div>
+                        <div class="post__category post__category--color_1_mod">Государственный сектор</div>
                         <div class="post__author">
                           Автор:
                           <strong>Денис Полищук</strong>
@@ -826,11 +820,7 @@
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__in"> 
-            <div class="footer__column"> 
-              <div class="footer__logo_wrap"> <a class="footer__logo_link" href="#">
-                  <svg class="icon icon_logo_footer icon--size_mod">
-                    <use xlink:href="images/sprite/sprite.svg#logo_footer"></use>
-                  </svg></a></div>
+            <div class="footer__column"> <a class="footer__logo_link" href="#"><img class="footer__logo_img" src="images/logo_footer.svg"></a>
               <div class="footer__section"> 
                 <div class="footer__section_title">Платформа AI</div>
                 <div class="footer__section_content"> 
@@ -857,23 +847,25 @@
                   <div class="footer__copyright"> 
                     <div class="footer__copyright_sign">©</div>
                     <div class="footer__copyright_text">
-                       2020 Everest. <br>ALL RIGHTS RESERVED</div>
+                      <p>2020 Everest. </p>
+                      <p>ALL RIGHTS RESERVED</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="footer__column"> 
               <div class="links">
-                <div class="links__list"> 
-                  <div class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Кто мы</a></div>
-                  <div class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Что мы делаем</a></div>
-                  <div class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Направления работы</a></div>
-                  <div class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Компетенции</a></div>
-                  <div class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Команда</a></div>
-                  <div class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Новости</a></div>
-                  <div class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Партнеры</a></div>
-                  <div class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Контакты</a></div>
-                </div>
+                <ul class="links__list"> 
+                  <li class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Кто мы</a></li>
+                  <li class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Что мы делаем</a></li>
+                  <li class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Направления работы</a></li>
+                  <li class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Компетенции</a></li>
+                  <li class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Команда</a></li>
+                  <li class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Новости</a></li>
+                  <li class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Партнеры</a></li>
+                  <li class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Контакты</a></li>
+                </ul>
               </div>
             </div>
             <div class="footer__column"> 
@@ -882,15 +874,15 @@
                 <div class="footer__section_content">
                   <div class="links">
                     <div class="links__title">Решения:</div>
-                    <div class="links__list"> 
-                      <div class="links__item"> <a class="links__link links__link--small_mod" href="#">Банки</a></div>
-                      <div class="links__item"> <a class="links__link links__link--small_mod" href="#">Страхование</a></div>
-                      <div class="links__item"> <a class="links__link links__link--small_mod" href="#">Здравохранение</a></div>
-                      <div class="links__item"> <a class="links__link links__link--small_mod" href="#">Транспорт и логистика</a></div>
-                      <div class="links__item"> <a class="links__link links__link--small_mod" href="#">Государственный сектор</a></div>
-                      <div class="links__item"> <a class="links__link links__link--small_mod" href="#">Ритейл и eCommerce</a></div>
-                      <div class="links__item"> <a class="links__link links__link--small_mod" href="#">Телекоммуникация</a></div>
-                    </div>
+                    <ul class="links__list"> 
+                      <li class="links__item"> <a class="links__link links__link--small_mod" href="#">Банки</a></li>
+                      <li class="links__item"> <a class="links__link links__link--small_mod" href="#">Страхование</a></li>
+                      <li class="links__item"> <a class="links__link links__link--small_mod" href="#">Здравохранение</a></li>
+                      <li class="links__item"> <a class="links__link links__link--small_mod" href="#">Транспорт и логистика</a></li>
+                      <li class="links__item"> <a class="links__link links__link--small_mod" href="#">Государственный сектор</a></li>
+                      <li class="links__item"> <a class="links__link links__link--small_mod" href="#">Ритейл и eCommerce</a></li>
+                      <li class="links__item"> <a class="links__link links__link--small_mod" href="#">Телекоммуникация</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
