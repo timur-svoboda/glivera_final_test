@@ -14,9 +14,8 @@ mixin post(data)
 						img_class: 'post__img',
 					})
 					if data.is_img_a_video_preview
-						.post__play_icon_wrap
-							a.post__play_icon_link(href="#")
-								+icon('play_button', 'icon--size_mod')
+						a.post__play_icon_link(href="#")
+							+icon('play_button', 'icon--size_mod')
 			.post__text_wrap(class=text_wrap_mod)
 				.post__top
 					.post__category(class=category_mod)= data.category
