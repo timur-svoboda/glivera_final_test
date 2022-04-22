@@ -67,9 +67,8 @@ mixin footer
 		.footer__container
 			.footer__in 
 				.footer__column 
-					.footer__logo_wrap 
-						a.footer__logo_link(href="#")
-							+icon('logo_footer', 'icon--size_mod')
+					a.footer__logo_link(href="#")
+						img.footer__logo_img(src=`${assetsImage}logo_footer.svg`) 
 					.footer__section 
 						.footer__section_title Платформа AI
 						.footer__section_content 

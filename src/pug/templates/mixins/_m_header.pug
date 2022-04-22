@@ -1,9 +1,8 @@
 mixin header
 	header.header
 		.header__in
-			.header__logo_wrap
-				a.header__logo_link(href="#")
-					+icon("logo_header", "icon--size_mod")
+			a.header__logo_link(href="#")
+				img.header__logo_img(src=`${assetsImage}logo_header.svg`)
 			.header__nav_wrap
 				nav.main_nav
 					+menu({
