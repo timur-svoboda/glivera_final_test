@@ -26,6 +26,7 @@
 }
 
 .header__logo_link {
+	display: block;
 	flex-shrink: 0;
 	margin-right: 3rem;
 	width: 8.6rem;
@@ -33,7 +34,7 @@
 }
 
 .header__logo_img {
-	@extend %cover_img;
+	@extend %contain_img;
 }
 
 .header__nav_wrap {

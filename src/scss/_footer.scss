@@ -117,9 +117,14 @@
 }
 
 .footer__logo_link {
+	display: block;
 	margin-bottom: 1rem;
-	max-width: 8.6rem;
-	max-height: 2.8rem;
+	width: 8.6rem;
+	height: 2.8rem;
+}
+
+.footer__logo_img {
+	@extend %contain_img;
 }
 
 .footer__section_title {
