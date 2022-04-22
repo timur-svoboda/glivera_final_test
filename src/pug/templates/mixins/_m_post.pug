@@ -23,7 +23,7 @@ mixin post(data)
 						.post__top_icon_wrap
 							+icon(data.top_icon, 'icon--size_mod')
 					else if data.author && data.is_author_on_top
-						.post__author
+						.post__author.post__author--top_mod
 							| Автор:
 							|
 							strong= data.author 

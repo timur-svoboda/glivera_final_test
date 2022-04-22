@@ -218,6 +218,10 @@
 	font-size: .8rem;
 	line-height: 1.2rem;
 	color: $gray;
+
+	&.post__author--top_mod {
+		margin: 0 0 0 auto;
+	}
 	
 	strong {
 		font-weight: 500;
