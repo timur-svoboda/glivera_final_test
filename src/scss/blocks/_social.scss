@@ -32,10 +32,22 @@
 	}
 
 	.header_mod & {
-		fill: $gray;
+		@extend %transition_color;
+
+		color: $gray;
+
+		&:hover, &:focus {
+			color: #BD243A;
+		}
 	}
 
 	.footer_mod & {
-		fill: $white;
+		@extend %transition_color;
+
+		color: $white;
+
+		&:hover, &:focus {
+			color: $color_text_base;
+		}
 	}
 }
