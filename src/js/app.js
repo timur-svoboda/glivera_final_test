@@ -34,6 +34,8 @@ const loadFunc = () => {
 	console.log('page load');
 
 	header({
+		headerSelector: '.header',
+		headerFixedMod: 'header--fixed_mod',
 		menuTriggerSelector: '.menuTrigger',
 		menuTriggerActiveMod: 'active_mod',
 		sidebarSelector: '.sidebar',
