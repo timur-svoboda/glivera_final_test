@@ -39,7 +39,13 @@ mixin header
 			form.search_form.sidebar__search_form(method="get")
 				button.search_form__button(type="submit", aria-label="Поиск")
 					+icon('magnifier', 'icon--size_mod')
-				input.form_input__element.search_form__input(type="search", name="search")
+				+form_input({
+					block_class: 'form_input search_form__input',
+					type: 'search',
+					name: 'search',
+					placeholder: 'Поиск',
+					required: true,
+				})
 			nav.main_nav.main_nav--vertical.sidebar__nav
 				+menu({
 					gl_class: 'main_nav',

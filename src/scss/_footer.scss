@@ -179,20 +179,8 @@
 	@extend %global_flex_block_row_wrap_flex-start;
 }
 
-.footer__form_input {
-	padding: 0 1rem;
-	min-width: 11.2rem;
+.footer__form_input_block {
 	flex-grow: 1;
-	
-	font-size: .8rem;
-	line-height: calc(2.4rem - 2px);
-	color: $white;
-
-	background-color: rgba($white, .34);
-	border: 1px solid transparent;
-	border-radius: 4px;
-
-	transition: border-color .3s ease;
 
 	@include bp($point_4, min) {
 		margin-right: 1rem;
@@ -201,9 +189,26 @@
 	@include bp($point_4 - 1) {
 		margin: 0 0 1rem 0;
 	}
+}
 
-	&:focus {
+.footer__form_input_element {
+	padding: 0 1rem;
+	min-width: 11.2rem;
+	
+	font-size: .8rem;
+	line-height: calc(2.4rem - 2px);
+	color: $white;
+
+	background-color: rgba($white, .34);
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-shadow: none;
+
+	transition: border-color .3s ease;
+
+	&:hover, &:focus {
 		border-color: $white;
+		box-shadow: none;
 	}
 
 	&::placeholder {
