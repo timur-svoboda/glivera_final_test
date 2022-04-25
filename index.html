@@ -85,7 +85,11 @@
               <use xlink:href="images/sprite/sprite.svg#magnifier"></use>
             </svg>
           </button>
-          <input class="form_input__element search_form__input" type="search" name="search">
+          <div class="form_input search_form__input">
+            <div class="form_input__field">
+              <input class="form_input__element" type="search" placeholder="Поиск" name="search" required>
+            </div>
+          </div>
         </form>
         <nav class="main_nav main_nav--vertical sidebar__nav">
           <ul class="main_nav__list ">
@@ -936,7 +940,11 @@
                   </div>
                   <form class="footer__form" method="post" action="/subscribe" autocomplete="on">
                     <div class="footer__form_in">
-                      <input class="footer__form_input" type="email" placeholder="Email">
+                      <div class="form_input footer__form_input_block">
+                        <div class="form_input__field">
+                          <input class="form_input__element footer__form_input_element" type="email" placeholder="Email" name="email" required>
+                        </div>
+                      </div>
                       <button class="footer__form_button" type="submit">Подписаться</button>
                     </div>
                   </form>
