@@ -6,6 +6,11 @@
 	&:not(:last-child) {
 		padding-right: 2.4rem;
 	}
+
+	.main_nav--vertical & {
+		margin-bottom: 0.8rem;
+		width: 100%;
+	} 
 }
 
 .main_nav__link {

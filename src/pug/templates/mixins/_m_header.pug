@@ -33,6 +33,36 @@ mixin header
 				ul.language_switch
 					li.language_switch__option.language_switch__option--active UA
 					li.language_switch__option RU
-			.menu_trigger
+			.menu_trigger.menuTrigger
 				span.menu_trigger_decor
+		.sidebar
+			form.search_form.sidebar__search_form(method="get")
+				button.search_form__button(type="submit", aria-label="Поиск")
+					+icon('magnifier', 'icon--size_mod')
+				input.form_input__element.search_form__input(type="search", name="search")
+			nav.main_nav.main_nav--vertical.sidebar__nav
+				+menu({
+					gl_class: 'main_nav',
+					items: [
+						{ title: 'О нас' },
+						{ title: 'Решения' },
+						{ title: 'Аналитика' },
+						{ title: 'Партнеры' },
+						{ title: 'Контакты' },
+						{ title: 'Подписка' },
+					],
+				})
+			.social.sidebar__social
+				+social({
+					mod_block: 'sidebar_mod',
+					items: [
+						{mod_link: 'social_link--facebook_mod', name_icon: 'facebook', mod_icon: 'icon--size_mod '},
+						{mod_link: 'social_link--twitter_mod', name_icon: 'twitter', mod_icon: 'icon--size_mod '},
+						{mod_link: 'social_link--rss_mod', name_icon: 'rss', mod_icon: 'icon--size_mod '},
+						{mod_link: 'social_link--youtube_mod', name_icon: 'youtube', mod_icon: 'icon--size_mod '},
+					],
+				})
+			ul.language_switch.sidebar__language_switch
+				li.language_switch__option.language_switch__option--active UA
+				li.language_switch__option RU
 				

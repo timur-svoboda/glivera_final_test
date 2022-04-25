@@ -1,0 +1,23 @@
+.search_form {
+	@extend %global_flex_block_row_nowrap_flex-start_center;
+}
+
+.search_form__button {
+	@extend %transition_color;
+
+	margin-right: 1.4rem;
+	width: $input_height;
+	height: $input_height;
+
+	color: $gray;
+
+	cursor: pointer;
+
+	&:hover, &:focus {
+		color: $color_text_base;
+	}
+}
+
+.search_form__input {
+	flex-grow: 1;
+}

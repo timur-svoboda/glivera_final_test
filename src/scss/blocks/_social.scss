@@ -31,7 +31,8 @@
 		height: .8rem;
 	}
 
-	.header_mod & {
+	.header_mod &,
+	.sidebar_mod & {
 		@extend %transition_color;
 
 		color: $gray;

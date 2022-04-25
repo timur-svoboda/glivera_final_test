@@ -1,0 +1,51 @@
+.sidebar {
+	@extend %global_flex_block_column_nowrap_flex-start;
+	@extend %transition_transform;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	padding: 5.4rem var(--gl-indent) var(--gl-indent);
+	max-width: 24rem;
+	height: 100vh;
+
+	background-color: $white;
+
+	overflow-y: auto;
+	transform: translate(100%);
+
+	&.sidebar--active_mod {
+		box-shadow: 0 0 4px 2px rgba($black, .2);
+
+		transform: translate(0);
+	}
+}
+
+.sidebar__cross {
+	@extend %transition_color;
+
+	margin: 0 0 2rem auto;
+	width: 1.8rem;
+	height: 1.8rem;
+
+	color: $color_text_base;
+	cursor: pointer;
+
+	&:hover {
+		color: rgba($color_text_base, .8);
+	}
+}
+
+.sidebar__search_form {
+	align-self: stretch;
+	margin-bottom: 2rem;
+}
+
+.sidebar__nav {
+	margin-bottom: 2rem;
+}
+
+.sidebar__social {
+	margin-bottom: 2rem;
+}
