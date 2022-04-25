@@ -218,10 +218,7 @@
 
 .footer__form_button {
 	@extend %outlined_btn;
-
-	min-width: 11.2rem;
-
-	line-height: calc(2.4rem - 2px);
+	@extend %btn_size_1;
 
 	@include bp($point_4 - 1) {
 		width: 100%;
