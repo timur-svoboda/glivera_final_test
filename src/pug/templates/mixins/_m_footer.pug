@@ -110,17 +110,17 @@ mixin footer
 							.footer__about_text
 								each paragraph in footer.about
 									p.footer__about_paragraph= paragraph.text
-							form.footer__form(method="post", action="/subscribe", autocomplete="on")
-								.footer__form_in
+							form.footer_form(method="post", action="/subscribe", autocomplete="on")
+								.footer_form__in
 									+form_input({
-										block_class: 'form_input footer__form_input_block',
-										class: 'form_input__element footer__form_input_element',
+										block_class: 'form_input footer_form__input_block',
+										class: 'form_input__element footer_form__input_element',
 										type: 'email',
 										name: 'email',
 										placeholder: 'Email',
 										required: true, 
 									})
-									button.footer__form_button(type="submit") Подписаться
+									button.footer_form__button(type="submit") Подписаться
 
 
 
