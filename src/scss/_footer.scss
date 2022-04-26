@@ -74,7 +74,7 @@
 	}
 
 	&:nth-child(3) {
-		@include bp($point_2, min) {
+		@include bp($point_1, min) {
 			width: 20.333%;
 		}
 
