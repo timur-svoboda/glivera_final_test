@@ -66,7 +66,7 @@ mixin footer
 	footer.footer
 		.footer__container
 			.footer__in 
-				.footer__column 
+				.footer__column.footer__column--meta_mod
 					a.footer__logo_link(href="#")
 						img.footer__logo_img(src=`${assetsImage}logo_footer.svg`) 
 					.footer__section 
@@ -87,13 +87,13 @@ mixin footer
 								.footer__copyright_text
 									p 2020 Everest. 
 									p ALL RIGHTS RESERVED
-				.footer__column 
+				.footer__column.footer__column--links_mod
 					.links
 						ul.links__list 
 							each link in footer.general_links
 								li.links__item.links__item--divide_line_mod
 									a.links__link.links__link--uppercase_mod(href="#")= link.text
-				.footer__column 
+				.footer__column.footer__column--solution_mod
 					.footer__section 
 						.footer__section_title Аналитика
 						.footer__section_content
@@ -103,7 +103,7 @@ mixin footer
 									each link in footer.solution_links
 										li.links__item 
 											a.links__link.links__link--small_mod(href="#")= link.text
-				.footer__column 
+				.footer__column.footer__column--about_mod
 					.footer__section 
 						.footer__section_title О нас
 						.footer__section_content 
