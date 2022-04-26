@@ -31,8 +31,20 @@
   <body>
     <header class="header">
       <div class="header__in"><a class="header__logo_link" href="#"><img class="header__logo_img" src="images/logo_header.svg"></a>
-        <div class="header__nav_wrap">
-          <nav class="main_nav">
+        <div class="sidebar header__sidebar">
+          <form class="search_form sidebar__search_form" method="get">
+            <button class="search_form__button" type="submit" aria-label="Поиск">
+              <svg class="icon icon_magnifier icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#magnifier"></use>
+              </svg>
+            </button>
+            <div class="form_input search_form__input">
+              <div class="form_input__field">
+                <input class="form_input__element" type="search" placeholder="Поиск" name="search" required>
+              </div>
+            </div>
+          </form>
+          <nav class="main_nav sidebar__nav">
             <ul class="main_nav__list ">
               <li class="main_nav__item  "><a class="main_nav__link " href="#">О нас</a></li>
               <li class="main_nav__item  "><a class="main_nav__link " href="#">Решения</a></li>
@@ -42,89 +54,37 @@
               <li class="main_nav__item  "><a class="main_nav__link " href="#">Подписка</a></li>
             </ul>
           </nav>
-        </div>
-        <div class="header__social_wrap">
-          <ul class="social_list header_mod">
-            <li class="social_item"><a class="social_link social_link--facebook_mod" href="#" target="_blank">
-                <svg class="icon icon_facebook icon--size_mod ">
-                  <use xlink:href="images/sprite/sprite.svg#facebook"></use>
-                </svg></a></li>
-            <li class="social_item"><a class="social_link social_link--twitter_mod" href="#" target="_blank">
-                <svg class="icon icon_twitter icon--size_mod ">
-                  <use xlink:href="images/sprite/sprite.svg#twitter"></use>
-                </svg></a></li>
-            <li class="social_item"><a class="social_link social_link--rss_mod" href="#" target="_blank">
-                <svg class="icon icon_rss icon--size_mod ">
-                  <use xlink:href="images/sprite/sprite.svg#rss"></use>
-                </svg></a></li>
-            <li class="social_item"><a class="social_link social_link--youtube_mod" href="#" target="_blank">
-                <svg class="icon icon_youtube icon--size_mod ">
-                  <use xlink:href="images/sprite/sprite.svg#youtube"></use>
-                </svg></a></li>
-          </ul>
-        </div>
-        <div class="header__search_wrap">
-          <button class="header__search_button" type="button" aria-label="Поиск">
-            <svg class="icon icon_magnifier icon--size_mod ">
+          <div class="social sidebar__social">
+            <ul class="social_list sidebar_mod">
+              <li class="social_item"><a class="social_link social_link--facebook_mod" href="#" target="_blank">
+                  <svg class="icon icon_facebook icon--size_mod ">
+                    <use xlink:href="images/sprite/sprite.svg#facebook"></use>
+                  </svg></a></li>
+              <li class="social_item"><a class="social_link social_link--twitter_mod" href="#" target="_blank">
+                  <svg class="icon icon_twitter icon--size_mod ">
+                    <use xlink:href="images/sprite/sprite.svg#twitter"></use>
+                  </svg></a></li>
+              <li class="social_item"><a class="social_link social_link--rss_mod" href="#" target="_blank">
+                  <svg class="icon icon_rss icon--size_mod ">
+                    <use xlink:href="images/sprite/sprite.svg#rss"></use>
+                  </svg></a></li>
+              <li class="social_item"><a class="social_link social_link--youtube_mod" href="#" target="_blank">
+                  <svg class="icon icon_youtube icon--size_mod ">
+                    <use xlink:href="images/sprite/sprite.svg#youtube"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+          <button class="sidebar__search_button" type="button" aria-label="Поиск">
+            <svg class="icon icon_magnifier icon--size_mod">
               <use xlink:href="images/sprite/sprite.svg#magnifier"></use>
             </svg>
           </button>
-        </div>
-        <div class="header__language_switch_wrap">
-          <ul class="language_switch">
+          <ul class="language_switch sidebar__language_switch">
             <li class="language_switch__option language_switch__option--active">UA</li>
             <li class="language_switch__option">RU</li>
           </ul>
         </div>
         <div class="menu_trigger menuTrigger"><span class="menu_trigger_decor"></span></div>
-      </div>
-      <div class="sidebar">
-        <form class="search_form sidebar__search_form" method="get">
-          <button class="search_form__button" type="submit" aria-label="Поиск">
-            <svg class="icon icon_magnifier icon--size_mod">
-              <use xlink:href="images/sprite/sprite.svg#magnifier"></use>
-            </svg>
-          </button>
-          <div class="form_input search_form__input">
-            <div class="form_input__field">
-              <input class="form_input__element" type="search" placeholder="Поиск" name="search" required>
-            </div>
-          </div>
-        </form>
-        <nav class="main_nav main_nav--vertical sidebar__nav">
-          <ul class="main_nav__list ">
-            <li class="main_nav__item  "><a class="main_nav__link " href="#">О нас</a></li>
-            <li class="main_nav__item  "><a class="main_nav__link " href="#">Решения</a></li>
-            <li class="main_nav__item  "><a class="main_nav__link " href="#">Аналитика</a></li>
-            <li class="main_nav__item  "><a class="main_nav__link " href="#">Партнеры</a></li>
-            <li class="main_nav__item  "><a class="main_nav__link " href="#">Контакты</a></li>
-            <li class="main_nav__item  "><a class="main_nav__link " href="#">Подписка</a></li>
-          </ul>
-        </nav>
-        <div class="social sidebar__social">
-          <ul class="social_list sidebar_mod">
-            <li class="social_item"><a class="social_link social_link--facebook_mod" href="#" target="_blank">
-                <svg class="icon icon_facebook icon--size_mod ">
-                  <use xlink:href="images/sprite/sprite.svg#facebook"></use>
-                </svg></a></li>
-            <li class="social_item"><a class="social_link social_link--twitter_mod" href="#" target="_blank">
-                <svg class="icon icon_twitter icon--size_mod ">
-                  <use xlink:href="images/sprite/sprite.svg#twitter"></use>
-                </svg></a></li>
-            <li class="social_item"><a class="social_link social_link--rss_mod" href="#" target="_blank">
-                <svg class="icon icon_rss icon--size_mod ">
-                  <use xlink:href="images/sprite/sprite.svg#rss"></use>
-                </svg></a></li>
-            <li class="social_item"><a class="social_link social_link--youtube_mod" href="#" target="_blank">
-                <svg class="icon icon_youtube icon--size_mod ">
-                  <use xlink:href="images/sprite/sprite.svg#youtube"></use>
-                </svg></a></li>
-          </ul>
-        </div>
-        <ul class="language_switch sidebar__language_switch">
-          <li class="language_switch__option language_switch__option--active">UA</li>
-          <li class="language_switch__option">RU</li>
-        </ul>
       </div>
     </header>
     <div class="wrapper">
@@ -862,7 +822,7 @@
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__in"> 
-            <div class="footer__column"> <a class="footer__logo_link" href="#"><img class="footer__logo_img" src="images/logo_footer.svg"></a>
+            <div class="footer__column footer__column--meta_mod"><a class="footer__logo_link" href="#"><img class="footer__logo_img" src="images/logo_footer.svg"></a>
               <div class="footer__section"> 
                 <div class="footer__section_title">Платформа AI</div>
                 <div class="footer__section_content"> 
@@ -896,7 +856,7 @@
                 </div>
               </div>
             </div>
-            <div class="footer__column"> 
+            <div class="footer__column footer__column--links_mod">
               <div class="links">
                 <ul class="links__list"> 
                   <li class="links__item links__item--divide_line_mod"><a class="links__link links__link--uppercase_mod" href="#">Кто мы</a></li>
@@ -910,7 +870,7 @@
                 </ul>
               </div>
             </div>
-            <div class="footer__column"> 
+            <div class="footer__column footer__column--solution_mod">
               <div class="footer__section"> 
                 <div class="footer__section_title">Аналитика</div>
                 <div class="footer__section_content">
@@ -929,7 +889,7 @@
                 </div>
               </div>
             </div>
-            <div class="footer__column"> 
+            <div class="footer__column footer__column--about_mod">
               <div class="footer__section"> 
                 <div class="footer__section_title">О нас</div>
                 <div class="footer__section_content"> 
@@ -938,14 +898,14 @@
                     <p class="footer__about_paragraph">Разрабатывает и внедряет решения на базе AI, используя методы Data Data и ML для совершенствования и автоматизации бизнес-процессов клиентов.</p>
                     <p class="footer__about_paragraph">Всегда оперирует тенденциями цифрового мира и концентрирует свои усилия на уникальности и инновационности методов в работе с каждым клиентом над созданием и адаптацией digital-идей и концепций.</p>
                   </div>
-                  <form class="footer__form" method="post" action="/subscribe" autocomplete="on">
-                    <div class="footer__form_in">
-                      <div class="form_input footer__form_input_block">
+                  <form class="footer_form" method="post" action="/subscribe" autocomplete="on">
+                    <div class="footer_form__in">
+                      <div class="form_input footer_form__input_block">
                         <div class="form_input__field">
-                          <input class="form_input__element footer__form_input_element" type="email" placeholder="Email" name="email" required>
+                          <input class="form_input__element footer_form__input_element" type="email" placeholder="Email" name="email" required>
                         </div>
                       </div>
-                      <button class="footer__form_button" type="submit">Подписаться</button>
+                      <button class="footer_form__button" type="submit">Подписаться</button>
                     </div>
                   </form>
                 </div>
