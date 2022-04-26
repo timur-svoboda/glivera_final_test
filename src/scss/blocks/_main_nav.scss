@@ -7,10 +7,10 @@
 		padding-right: 2.4rem;
 	}
 
-	.main_nav--vertical & {
+	@include bp($point_1 - 1) {
 		margin-bottom: 0.8rem;
 		width: 100%;
-	} 
+	}
 }
 
 .main_nav__link {

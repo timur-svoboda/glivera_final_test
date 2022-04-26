@@ -3,72 +3,43 @@ mixin header
 		.header__in
 			a.header__logo_link(href="#")
 				img.header__logo_img(src=`${assetsImage}logo_header.svg`)
-			.header__nav_wrap
-				nav.main_nav
+			.sidebar.header__sidebar
+				form.search_form.sidebar__search_form(method="get")
+					button.search_form__button(type="submit", aria-label="Поиск")
+						+icon('magnifier', 'icon--size_mod')
+					+form_input({
+						block_class: 'form_input search_form__input',
+						type: 'search',
+						name: 'search',
+						placeholder: 'Поиск',
+						required: true,
+					})
+				nav.main_nav.sidebar__nav
 					+menu({
 						gl_class: 'main_nav',
 						items: [
-							{title: 'О нас', url: '#', active: false},
-							{title: 'Решения', url: '#', active: false},
-							{title: 'Аналитика', url: '#', active: false},
-							{title: 'Партнеры', url: '#', active: false},
-							{title: 'Контакты', url: '#', active: false},
-							{title: 'Подписка', url: '#', active: false},
+							{ title: 'О нас' },
+							{ title: 'Решения' },
+							{ title: 'Аналитика' },
+							{ title: 'Партнеры' },
+							{ title: 'Контакты' },
+							{ title: 'Подписка' },
 						],
 					})
-			.header__social_wrap
-				+social({
-					mod_block: 'header_mod',
-					items: [
-						{mod_link: 'social_link--facebook_mod', name_icon: 'facebook', mod_icon: 'icon--size_mod '},
-						{mod_link: 'social_link--twitter_mod', name_icon: 'twitter', mod_icon: 'icon--size_mod '},
-						{mod_link: 'social_link--rss_mod', name_icon: 'rss', mod_icon: 'icon--size_mod '},
-						{mod_link: 'social_link--youtube_mod', name_icon: 'youtube', mod_icon: 'icon--size_mod '},
-					],
-				})
-			.header__search_wrap
-				button.header__search_button(type="button", aria-label="Поиск")
-					+icon('magnifier', 'icon--size_mod ')
-			.header__language_switch_wrap
-				ul.language_switch
+				.social.sidebar__social
+					+social({
+						mod_block: 'sidebar_mod',
+						items: [
+							{mod_link: 'social_link--facebook_mod', name_icon: 'facebook', mod_icon: 'icon--size_mod '},
+							{mod_link: 'social_link--twitter_mod', name_icon: 'twitter', mod_icon: 'icon--size_mod '},
+							{mod_link: 'social_link--rss_mod', name_icon: 'rss', mod_icon: 'icon--size_mod '},
+							{mod_link: 'social_link--youtube_mod', name_icon: 'youtube', mod_icon: 'icon--size_mod '},
+						],
+					})
+				button.sidebar__search_button(type="button", aria-label="Поиск")
+					+icon('magnifier', 'icon--size_mod')
+				ul.language_switch.sidebar__language_switch
 					li.language_switch__option.language_switch__option--active UA
 					li.language_switch__option RU
 			.menu_trigger.menuTrigger
 				span.menu_trigger_decor
-		.sidebar
-			form.search_form.sidebar__search_form(method="get")
-				button.search_form__button(type="submit", aria-label="Поиск")
-					+icon('magnifier', 'icon--size_mod')
-				+form_input({
-					block_class: 'form_input search_form__input',
-					type: 'search',
-					name: 'search',
-					placeholder: 'Поиск',
-					required: true,
-				})
-			nav.main_nav.main_nav--vertical.sidebar__nav
-				+menu({
-					gl_class: 'main_nav',
-					items: [
-						{ title: 'О нас' },
-						{ title: 'Решения' },
-						{ title: 'Аналитика' },
-						{ title: 'Партнеры' },
-						{ title: 'Контакты' },
-						{ title: 'Подписка' },
-					],
-				})
-			.social.sidebar__social
-				+social({
-					mod_block: 'sidebar_mod',
-					items: [
-						{mod_link: 'social_link--facebook_mod', name_icon: 'facebook', mod_icon: 'icon--size_mod '},
-						{mod_link: 'social_link--twitter_mod', name_icon: 'twitter', mod_icon: 'icon--size_mod '},
-						{mod_link: 'social_link--rss_mod', name_icon: 'rss', mod_icon: 'icon--size_mod '},
-						{mod_link: 'social_link--youtube_mod', name_icon: 'youtube', mod_icon: 'icon--size_mod '},
-					],
-				})
-			ul.language_switch.sidebar__language_switch
-				li.language_switch__option.language_switch__option--active UA
-				li.language_switch__option RU
-				
